@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader - Download TikTok, Instagram, YouTube, Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎥 Video Downloader</h1>
+            <p>Download dari TikTok, Instagram, YouTube, Facebook</p>
+        </header>
+
+        <main class="main-content">
+            <section class="input-section">
+                <div class="form-group">
+                    <label for="videoUrl">URL Video:</label>
+                    <input type="text" id="videoUrl" class="input-field" 
+                           placeholder="Paste URL video di sini...">
+                </div>
+
+                <div class="options-section">
+                    <div class="option-group">
+                        <label for="quality">Kualitas:</label>
+                        <select id="quality" class="input-field">
+                            <option value="best">Terbaik</option>
+                            <option value="720">720p</option>
+                            <option value="480">480p</option>
+                            <option value="audio">Audio Only (MP3)</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" id="removeWatermark">
+                            <span>Remove Watermark</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="downloadBtn" class="btn btn-primary">📥 Download</button>
+                    <button id="clearBtn" class="btn btn-secondary">🗑️ Hapus</button>
+                </div>
+            </section>
+
+            <section class="status-section">
+                <div id="statusMessage" class="status-message hidden"></div>
+                <div id="loadingSpinner" class="loading-spinner hidden">
+                    <div class="spinner"></div>
+                    <p>Mengunduh...</p>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h2>ℹ️ Info</h2>
+                <ul>
+                    <li>✅ Support TikTok, Instagram, YouTube, Facebook</li>
+                    <li>✅ Multiple quality options</li>
+                    <li>✅ Remove watermark (TikTok & Instagram)</li>
+                    <li>✅ Extract audio to MP3</li>
+                    <li>⚠️ Gunakan hanya untuk konten Anda atau dengan izin</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Video Downloader | By bigbosnopejb-dotcom</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
